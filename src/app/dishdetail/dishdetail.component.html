@@ -8,10 +8,7 @@
 
   <mat-grid-list cols="2" rowHeight="200px">
 
-    <!--  <div fxFlex="40">-->
-    <!--    <p>Display the details of the Dish here</p>-->
-    <!--  </div>-->
-
+    <!-- Dish name and Description-->
     <div fxFlex="40" *ngIf="dish">
       <mat-card>
         <mat-card-header>
@@ -31,6 +28,7 @@
       </mat-card>
     </div>
 
+    <!-- Comment, rating, author & date-->
     <div *ngIf="dish">
       <mat-card>
         <mat-card-header>
@@ -39,10 +37,10 @@
           </mat-card-title>
         </mat-card-header>
 
-        <mat-card-content *ngFor="let review of dish.comments">
-          <div>{{review.comment }} </div>
-          <div>{{review.rating }} Star</div>
-          <div>-- {{review.author }}  {{ review.date | date}}</div>
+        <mat-card-content *ngFor="let dishReview of dish.comments">
+          <div>{{dishReview.comment }} </div>
+          <div>{{dishReview.rating }} Star</div>
+          <div>-- {{dishReview.author }}  {{ dishReview.date | date}}</div>
         </mat-card-content>
       </mat-card>
 
