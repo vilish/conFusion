@@ -11,7 +11,8 @@ import {
   MatDialogModule,
   MatGridListModule,
   MatListModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatInputModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MenuComponent } from './menu/menu.component';
@@ -53,7 +54,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatDialogModule,
     FormsModule,
     MatFormFieldModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatInputModule
   ],
   providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent],
