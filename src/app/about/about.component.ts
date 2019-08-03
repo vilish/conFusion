@@ -15,11 +15,12 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.leaders = this.leaderService.getLeaders();
+    this.leaderService.getLeaders()
+      .then(leaders => this.leaders = leaders);
   }
 
-  getLeaders(): Leader[] {
-    return this.leaderService.getLeaders();
+  getLeaders(): Promise<Leader[]> {
+    return Promise.resolve(this.leaderService.getLeaders());
   }
 
 }
