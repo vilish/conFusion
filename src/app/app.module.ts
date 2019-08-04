@@ -66,9 +66,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule
   ],
   providers: [DishService, PromotionService, LeaderService],
-  bootstrap: [AppComponent]
-
-  ,
+  bootstrap: [AppComponent],
   entryComponents: [
     LoginComponent
   ]
