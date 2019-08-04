@@ -12,7 +12,7 @@ import {
   MatGridListModule,
   MatListModule,
   MatToolbarModule,
-  MatInputModule
+  MatInputModule, MatSliderModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MenuComponent } from './menu/menu.component';
@@ -63,7 +63,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatCheckboxModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSliderModule
   ],
   providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent],
