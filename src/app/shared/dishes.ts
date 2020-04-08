@@ -1,4 +1,4 @@
-import { Dish } from './dish';
+import { Dish } from './Dish';
 
 export const DISHES: Dish[] = [
   {
